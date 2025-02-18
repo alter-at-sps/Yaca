@@ -24,41 +24,41 @@
         </Grid.ColumnDefinitions>
 
         <!-- Number Display -->
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="4" FontSize="32" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="15">87623578458734658</TextBlock>
+        <TextBlock Name="AccDisplay" Grid.Row="0" Grid.ColumnSpan="4" FontSize="32" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="15">0</TextBlock>
 
         <!-- Function buttons -->
 
         <Button Grid.Column="0" Grid.Row="1" FontSize="28" Margin="5">%</Button>
-        <Button Grid.Column="1" Grid.Row="1" FontSize="28" Margin="5">CE</Button>
-        <Button Grid.Column="2" Grid.Row="1" FontSize="28" Margin="5">C</Button>
-        <Button Grid.Column="3" Grid.Row="1" FontSize="24" Margin="5">BSpace</Button>
+        <Button Grid.Column="1" Grid.Row="1" FontSize="28" Margin="5" Click="InputClearExpression">CE</Button>
+        <Button Grid.Column="2" Grid.Row="1" FontSize="28" Margin="5" Click="InputClear">C</Button>
+        <Button Grid.Column="3" Grid.Row="1" FontSize="24" Margin="5" Click="InputBackspace">BSpace</Button>
 
-        <Button Grid.Column="0" Grid.Row="2" FontSize="28" Margin="5">1/x</Button>
-        <Button Grid.Column="1" Grid.Row="2" FontSize="28" Margin="5">x²</Button>
-        <Button Grid.Column="2" Grid.Row="2" FontSize="28" Margin="5">²√x</Button>
-        <Button Grid.Column="3" Grid.Row="2" FontSize="28" Margin="5">/</Button>
+        <Button Grid.Column="0" Grid.Row="2" FontSize="28" Margin="5" Click="InputOneOver">1/x</Button>
+        <Button Grid.Column="1" Grid.Row="2" FontSize="28" Margin="5" Click="InputSquared">x²</Button>
+        <Button Grid.Column="2" Grid.Row="2" FontSize="28" Margin="5" Click="InputSqrt">²√x</Button>
+        <Button Grid.Column="3" Grid.Row="2" FontSize="28" Margin="5" Click="InputDiv">/</Button>
 
         <!-- Numpad and Side buttons -->
 
-        <Button Grid.Column="0" Grid.Row="3" FontSize="28" Margin="5">7</Button>
-        <Button Grid.Column="1" Grid.Row="3" FontSize="28" Margin="5">8</Button>
-        <Button Grid.Column="2" Grid.Row="3" FontSize="28" Margin="5">9</Button>
-        <Button Grid.Column="3" Grid.Row="3" FontSize="28" Margin="5">*</Button>
+        <Button Grid.Column="0" Grid.Row="3" FontSize="28" Margin="5" Click="Input7">7</Button>
+        <Button Grid.Column="1" Grid.Row="3" FontSize="28" Margin="5" Click="Input8">8</Button>
+        <Button Grid.Column="2" Grid.Row="3" FontSize="28" Margin="5" Click="Input9">9</Button>
+        <Button Grid.Column="3" Grid.Row="3" FontSize="28" Margin="5" Click="InputMul">*</Button>
 
-        <Button Grid.Column="0" Grid.Row="4" FontSize="28" Margin="5">4</Button>
-        <Button Grid.Column="1" Grid.Row="4" FontSize="28" Margin="5">5</Button>
-        <Button Grid.Column="2" Grid.Row="4" FontSize="28" Margin="5">6</Button>
-        <Button Grid.Column="3" Grid.Row="4" FontSize="28" Margin="5">-</Button>
+        <Button Grid.Column="0" Grid.Row="4" FontSize="28" Margin="5" Click="Input4">4</Button>
+        <Button Grid.Column="1" Grid.Row="4" FontSize="28" Margin="5" Click="Input5">5</Button>
+        <Button Grid.Column="2" Grid.Row="4" FontSize="28" Margin="5" Click="Input6">6</Button>
+        <Button Grid.Column="3" Grid.Row="4" FontSize="28" Margin="5" Click="InputSub">-</Button>
 
-        <Button Grid.Column="0" Grid.Row="5" FontSize="28" Margin="5">1</Button>
-        <Button Grid.Column="1" Grid.Row="5" FontSize="28" Margin="5">2</Button>
-        <Button Grid.Column="2" Grid.Row="5" FontSize="28" Margin="5">3</Button>
-        <Button Grid.Column="3" Grid.Row="5" FontSize="28" Margin="5">+</Button>
+        <Button Grid.Column="0" Grid.Row="5" FontSize="28" Margin="5" Click="Input1">1</Button>
+        <Button Grid.Column="1" Grid.Row="5" FontSize="28" Margin="5" Click="Input2">2</Button>
+        <Button Grid.Column="2" Grid.Row="5" FontSize="28" Margin="5" Click="Input3">3</Button>
+        <Button Grid.Column="3" Grid.Row="5" FontSize="28" Margin="5" Click="InputAdd">+</Button>
 
-        <Button Grid.Column="0" Grid.Row="6" FontSize="28" Margin="5">+/-</Button>
-        <Button Grid.Column="1" Grid.Row="6" FontSize="28" Margin="5">0</Button>
-        <Button Grid.Column="2" Grid.Row="6" FontSize="28" Margin="5">,</Button>
-        <Button Grid.Column="3" Grid.Row="6" FontSize="28" Margin="5">=</Button>
+        <Button Grid.Column="0" Grid.Row="6" FontSize="28" Margin="5" Click="InputNeg">+/-</Button>
+        <Button Grid.Column="1" Grid.Row="6" FontSize="28" Margin="5" Click="Input0">0</Button>
+        <Button Grid.Column="2" Grid.Row="6" FontSize="28" Margin="5" Click="InputSeparator">,</Button>
+        <Button Grid.Column="3" Grid.Row="6" FontSize="28" Margin="5" Click="InputCalc">=</Button>
 
     </Grid>
 </Window>
