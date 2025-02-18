@@ -88,21 +88,40 @@ namespace Yaca
 
         public void oneOverX()
         {
+            double stack = bak;
+
             SAV();
             acc = 1;
             SWP();
             DIV();
+
+            bak = stack;
         }
 
         public void XSquared()
         {
+            double stack = bak;
+
             SAV();
             MUL();
+
+            bak = stack;
         }
 
         public void sqrtX()
         {
             acc = Math.Sqrt(acc); // i give up
+        }
+
+        public void XPercentile()
+        {
+            double stack = bak;
+
+            SAV();
+            acc = 100;
+            DIV();
+
+            bak = stack;
         }
 
         // input hw
@@ -168,6 +187,7 @@ namespace Yaca
                     break;
             }
 
+            bak = 0;
             alu_flag = 0; // clear op
             text_input = "";
 
@@ -250,6 +270,13 @@ namespace Yaca
             UpdateAccDisplay();
         }
 
+        private void InputPercentile(object sender, RoutedEventArgs e)
+        {
+            EnsureAccInputIsConverted();
+            XPercentile();
+            UpdateAccDisplay();
+        }
+
         // number input
 
         private void Input0(object sender, RoutedEventArgs e)
@@ -324,7 +351,7 @@ namespace Yaca
         {
             if (text_input.Length == 0) return;
             
-            text_input.Substring(0, text_input.Length - 2);
+            text_input = text_input.Substring(0, text_input.Length - 1);
             UpdateTextInputDisplay();
         }
     }
