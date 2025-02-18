@@ -25,7 +25,7 @@
 
         <!-- Number Display -->
         <TextBlock Name="AccDisplay" Grid.Row="0" Grid.ColumnSpan="4" FontSize="32" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="15">0</TextBlock>
-        <TextBlock Name="BakDisplay" FontSize="12" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="85,4,15,0" Grid.ColumnSpan="4" Foreground="#FF616161"/>
+        <!-- <TextBlock Name="BakDisplay" FontSize="12" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="85,4,15,0" Grid.ColumnSpan="4" Foreground="#FF616161"/> -->
 
         <!-- Function buttons -->
 

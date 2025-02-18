@@ -130,27 +130,27 @@ namespace Yaca
         {
             AccDisplay.Text = acc.ToString();
 
-            if (bak != 0)
+            /* if (bak != 0)
             {
                 BakDisplay.Text = $"BAK: {bak}";
             } else
             {
                 BakDisplay.Text = "";
-            }
+            } */
         }
 
         private void UpdateTextInputDisplay()
         {
             AccDisplay.Text = text_input;
 
-            if (bak != 0)
+            /* if (bak != 0)
             {
                 BakDisplay.Text = $"BAK: {bak}";
             }
             else
             {
                 BakDisplay.Text = "";
-            }
+            } */
         }
 
         private void EnsureAccInputIsConverted()
