@@ -202,7 +202,7 @@ namespace Yaca
             acc = 0;
 
             alu_flag = op; // set op mode
-            UpdateAccDisplay();
+            // UpdateAccDisplay();
         }
 
         private void InputAdd(object sender, RoutedEventArgs e)
