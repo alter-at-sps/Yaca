@@ -115,11 +115,23 @@ namespace Yaca
 
         public void XPercentile()
         {
+            if (alu_flag == 0)
+            {
+                acc = 0;
+                return;
+            }
+
             double stack = bak;
 
             SAV();
             acc = 100;
             DIV();
+
+            if (alu_flag == 1 || alu_flag == 2)
+            {
+                bak = stack;
+                MUL();
+            }
 
             bak = stack;
         }
